@@ -16,11 +16,10 @@ const Loader = () => {
 
     return (
         <Html>
-            <div className="absloute flex h-full w-full items-center justify-center">
-                <div
-                    ref={spinnerRef}
-                    className="spinner border-blue-500 h-10 w-10 animate-spin rounded-full border-4 border-t-transparent"
-                ></div>
+            <div className="absolute left-0 top-0 flex h-full w-full items-center justify-center">
+                <div className="h-[10vw] w-[10vw] rounded-full">
+                    Loading...
+                </div>
             </div>
         </Html>
     )

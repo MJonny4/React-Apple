@@ -6,12 +6,13 @@ Source: https://sketchfab.com/3d-models/apple-iphone-15-pro-max-black-df17520841
 Title: Apple iPhone 15 Pro Max Black
 */
 
-import { useGLTF, useTexture } from '@react-three/drei'
-import React, { useEffect, useRef } from 'react'
 import * as THREE from 'three'
+import React, { useEffect, useRef } from 'react'
+import { useGLTF, useTexture } from '@react-three/drei'
 
-export default function IPhone(props) {
+function Model(props) {
     const { nodes, materials } = useGLTF('/models/scene.glb')
+
     const texture = useTexture(props.item.img)
 
     useEffect(() => {
@@ -24,7 +25,7 @@ export default function IPhone(props) {
                 material[0] !== 'jlzuBkUzuJqgiAK' &&
                 material[0] !== 'xNrofRCqOXXHVZt'
             ) {
-                // @ts-expect-error ts-migrate(2531) FIXME: Object is possibly 'null'.
+                // @ts-ignore
                 material[1].color = new THREE.Color(props.item.color[0])
             }
             material[1].needsUpdate = true
@@ -36,7 +37,7 @@ export default function IPhone(props) {
             <mesh
                 castShadow
                 receiveShadow
-                // @ts-expect-error ts-migrate(2554) FIXME: Expected 0 arguments, but got 1.
+                // @ts-ignore
                 geometry={nodes.ttmRoLdJipiIOmf.geometry}
                 material={materials.hUlRcbieVuIiOXG}
                 scale={0.01}
@@ -44,7 +45,7 @@ export default function IPhone(props) {
             <mesh
                 castShadow
                 receiveShadow
-                // @ts-expect-error ts-migrate(2554) FIXME: Expected 0 arguments, but got 1.
+                // @ts-ignore
                 geometry={nodes.DjsDkGiopeiEJZK.geometry}
                 material={materials.PaletteMaterial001}
                 scale={0.01}
@@ -52,7 +53,7 @@ export default function IPhone(props) {
             <mesh
                 castShadow
                 receiveShadow
-                // @ts-expect-error ts-migrate(2554) FIXME: Expected 0 arguments, but got 1.
+                // @ts-ignore
                 geometry={nodes.buRWvyqhBBgcJFo.geometry}
                 material={materials.PaletteMaterial002}
                 scale={0.01}
@@ -60,7 +61,7 @@ export default function IPhone(props) {
             <mesh
                 castShadow
                 receiveShadow
-                // @ts-expect-error ts-migrate(2554) FIXME: Expected 0 arguments, but got 1.
+                // @ts-ignore
                 geometry={nodes.MrMmlCAsAxJpYqQ_0.geometry}
                 material={materials.dxCVrUCvYhjVxqy}
                 scale={0.01}
@@ -68,7 +69,7 @@ export default function IPhone(props) {
             <mesh
                 castShadow
                 receiveShadow
-                // @ts-expect-error ts-migrate(2554) FIXME: Expected 0 arguments, but got 1.
+                // @ts-ignore
                 geometry={nodes.wqbHSzWaUxBCwxY_0.geometry}
                 material={materials.MHFGNLrDQbTNima}
                 scale={0.01}
@@ -76,7 +77,7 @@ export default function IPhone(props) {
             <mesh
                 castShadow
                 receiveShadow
-                // @ts-expect-error ts-migrate(2554) FIXME: Expected 0 arguments, but got 1.
+                // @ts-ignore
                 geometry={nodes.QvGDcbDApaGssma.geometry}
                 material={materials.kUhjpatHUvkBwfM}
                 scale={0.01}
@@ -84,7 +85,7 @@ export default function IPhone(props) {
             <mesh
                 castShadow
                 receiveShadow
-                // @ts-expect-error ts-migrate(2554) FIXME: Expected 0 arguments, but got 1.
+                // @ts-ignore
                 geometry={nodes.vFwJFNASGvEHWhs.geometry}
                 material={materials.RJoymvEsaIItifI}
                 scale={0.01}
@@ -92,7 +93,7 @@ export default function IPhone(props) {
             <mesh
                 castShadow
                 receiveShadow
-                // @ts-expect-error ts-migrate(2554) FIXME: Expected 0 arguments, but got 1.
+                // @ts-ignore
                 geometry={nodes.evAxFwhaQUwXuua.geometry}
                 material={materials.KSIxMqttXxxmOYl}
                 scale={0.01}
@@ -100,7 +101,7 @@ export default function IPhone(props) {
             <mesh
                 castShadow
                 receiveShadow
-                // @ts-expect-error ts-migrate(2554) FIXME: Expected 0 arguments, but got 1.
+                // @ts-ignore
                 geometry={nodes.USxQiqZgxHbRvqB.geometry}
                 material={materials.mcPrzcBUcdqUybC}
                 scale={0.01}
@@ -108,7 +109,7 @@ export default function IPhone(props) {
             <mesh
                 castShadow
                 receiveShadow
-                // @ts-expect-error ts-migrate(2554) FIXME: Expected 0 arguments, but got 1.
+                // @ts-ignore
                 geometry={nodes.TvgBVmqNmSrFVfW.geometry}
                 material={materials.pIhYLPqiSQOZTjn}
                 scale={0.01}
@@ -116,7 +117,7 @@ export default function IPhone(props) {
             <mesh
                 castShadow
                 receiveShadow
-                // @ts-expect-error ts-migrate(2554) FIXME: Expected 0 arguments, but got 1.
+                // @ts-ignore
                 geometry={nodes.GuYJryuYunhpphO.geometry}
                 material={materials.eShKpuMNVJTRrgg}
                 scale={0.01}
@@ -124,7 +125,7 @@ export default function IPhone(props) {
             <mesh
                 castShadow
                 receiveShadow
-                // @ts-expect-error ts-migrate(2554) FIXME: Expected 0 arguments, but got 1.
+                // @ts-ignore
                 geometry={nodes.pvdHknDTGDzVpwc.geometry}
                 material={materials.xdyiJLYTYRfJffH}
                 scale={0.01}
@@ -132,7 +133,7 @@ export default function IPhone(props) {
             <mesh
                 castShadow
                 receiveShadow
-                // @ts-expect-error ts-migrate(2554) FIXME: Expected 0 arguments, but got 1.
+                // @ts-ignore
                 geometry={nodes.CfghdUoyzvwzIum.geometry}
                 material={materials.jpGaQNgTtEGkTfo}
                 scale={0.01}
@@ -140,7 +141,7 @@ export default function IPhone(props) {
             <mesh
                 castShadow
                 receiveShadow
-                // @ts-expect-error ts-migrate(2554) FIXME: Expected 0 arguments, but got 1.
+                // @ts-ignore
                 geometry={nodes.DjdhycfQYjKMDyn.geometry}
                 material={materials.ujsvqBWRMnqdwPx}
                 scale={0.01}
@@ -148,7 +149,7 @@ export default function IPhone(props) {
             <mesh
                 castShadow
                 receiveShadow
-                // @ts-expect-error ts-migrate(2554) FIXME: Expected 0 arguments, but got 1.
+                // @ts-ignore
                 geometry={nodes.usFLmqcyrnltBUr.geometry}
                 material={materials.sxNzrmuTqVeaXdg}
                 scale={0.01}
@@ -156,29 +157,26 @@ export default function IPhone(props) {
             <mesh
                 castShadow
                 receiveShadow
-                // @ts-expect-error ts-migrate(2554) FIXME: Expected 0 arguments, but got 1.
+                // @ts-ignore
                 geometry={nodes.xXDHkMplTIDAXLN.geometry}
                 material={materials.pIJKfZsazmcpEiU}
+                scale={0.01}
+            >
+                {/* @ts-ignore */}
+                <meshStandardMaterial roughness={1} map={texture} />
+            </mesh>
+            <mesh
+                castShadow
+                receiveShadow
+                // @ts-ignore
+                geometry={nodes.vELORlCJixqPHsZ.geometry}
+                material={materials.zFdeDaGNRwzccye}
                 scale={0.01}
             />
             <mesh
                 castShadow
                 receiveShadow
-                // @ts-expect-error ts-migrate(2554) FIXME: Expected 0 arguments, but got 1.
-                geometry={nodes.vELORlCJixqPHsZ.geometry}
-                material={materials.zFdeDaGNRwzccye}
-                scale={0.01}
-            >
-                <meshStandardMaterial 
-                    roughness={1}
-                    // @ts-expect-error ts-migrate(2554) FIXME: Expected 0 arguments, but got 1.
-                    map={texture}
-                />
-            </mesh>
-            <mesh
-                castShadow
-                receiveShadow
-                // @ts-expect-error ts-migrate(2554) FIXME: Expected 0 arguments, but got 1.
+                // @ts-ignore
                 geometry={nodes.EbQGKrWAqhBHiMv.geometry}
                 material={materials.TBLSREBUyLMVtJa}
                 scale={0.01}
@@ -186,7 +184,7 @@ export default function IPhone(props) {
             <mesh
                 castShadow
                 receiveShadow
-                // @ts-expect-error ts-migrate(2554) FIXME: Expected 0 arguments, but got 1.
+                // @ts-ignore
                 geometry={nodes.EddVrWkqZTlvmci.geometry}
                 material={materials.xNrofRCqOXXHVZt}
                 scale={0.01}
@@ -194,7 +192,7 @@ export default function IPhone(props) {
             <mesh
                 castShadow
                 receiveShadow
-                // @ts-expect-error ts-migrate(2554) FIXME: Expected 0 arguments, but got 1.
+                // @ts-ignore
                 geometry={nodes.KSWlaxBcnPDpFCs.geometry}
                 material={materials.yQQySPTfbEJufve}
                 scale={0.01}
@@ -202,7 +200,7 @@ export default function IPhone(props) {
             <mesh
                 castShadow
                 receiveShadow
-                // @ts-expect-error ts-migrate(2554) FIXME: Expected 0 arguments, but got 1.
+                // @ts-ignore
                 geometry={nodes.TakBsdEjEytCAMK.geometry}
                 material={materials.PaletteMaterial003}
                 scale={0.01}
@@ -210,7 +208,7 @@ export default function IPhone(props) {
             <mesh
                 castShadow
                 receiveShadow
-                // @ts-expect-error ts-migrate(2554) FIXME: Expected 0 arguments, but got 1.
+                // @ts-ignore
                 geometry={nodes.IykfmVvLplTsTEW.geometry}
                 material={materials.PaletteMaterial004}
                 scale={0.01}
@@ -218,7 +216,7 @@ export default function IPhone(props) {
             <mesh
                 castShadow
                 receiveShadow
-                // @ts-expect-error ts-migrate(2554) FIXME: Expected 0 arguments, but got 1.
+                // @ts-ignore
                 geometry={nodes.wLfSXtbwRlBrwof.geometry}
                 material={materials.oZRkkORNzkufnGD}
                 scale={0.01}
@@ -226,7 +224,7 @@ export default function IPhone(props) {
             <mesh
                 castShadow
                 receiveShadow
-                // @ts-expect-error ts-migrate(2554) FIXME: Expected 0 arguments, but got 1.
+                // @ts-ignore
                 geometry={nodes.WJwwVjsahIXbJpU.geometry}
                 material={materials.yhcAXNGcJWCqtIS}
                 scale={0.01}
@@ -234,7 +232,7 @@ export default function IPhone(props) {
             <mesh
                 castShadow
                 receiveShadow
-                // @ts-expect-error ts-migrate(2554) FIXME: Expected 0 arguments, but got 1.
+                // @ts-ignore
                 geometry={nodes.YfrJNXgMvGOAfzz.geometry}
                 material={materials.bCgzXjHOanGdTFV}
                 scale={0.01}
@@ -242,7 +240,7 @@ export default function IPhone(props) {
             <mesh
                 castShadow
                 receiveShadow
-                // @ts-expect-error ts-migrate(2554) FIXME: Expected 0 arguments, but got 1.
+                // @ts-ignore
                 geometry={nodes.DCLCbjzqejuvsqH.geometry}
                 material={materials.vhaEJjZoqGtyLdo}
                 scale={0.01}
@@ -250,7 +248,7 @@ export default function IPhone(props) {
             <mesh
                 castShadow
                 receiveShadow
-                // @ts-expect-error ts-migrate(2554) FIXME: Expected 0 arguments, but got 1.
+                // @ts-ignore
                 geometry={nodes.CdalkzDVnwgdEhS.geometry}
                 material={materials.jlzuBkUzuJqgiAK}
                 scale={0.01}
@@ -258,7 +256,7 @@ export default function IPhone(props) {
             <mesh
                 castShadow
                 receiveShadow
-                // @ts-expect-error ts-migrate(2554) FIXME: Expected 0 arguments, but got 1.
+                // @ts-ignore
                 geometry={nodes.NtjcIgolNGgYlCg.geometry}
                 material={materials.PpwUTnTFZJXxCoE}
                 scale={0.01}
@@ -266,7 +264,7 @@ export default function IPhone(props) {
             <mesh
                 castShadow
                 receiveShadow
-                // @ts-expect-error ts-migrate(2554) FIXME: Expected 0 arguments, but got 1.
+                // @ts-ignore
                 geometry={nodes.pXBNoLiaMwsDHRF.geometry}
                 material={materials.yiDkEwDSyEhavuP}
                 scale={0.01}
@@ -274,7 +272,7 @@ export default function IPhone(props) {
             <mesh
                 castShadow
                 receiveShadow
-                // @ts-expect-error ts-migrate(2554) FIXME: Expected 0 arguments, but got 1.
+                // @ts-ignore
                 geometry={nodes.IkoiNqATMVoZFKD.geometry}
                 material={materials.hiVunnLeAHkwGEo}
                 scale={0.01}
@@ -282,7 +280,7 @@ export default function IPhone(props) {
             <mesh
                 castShadow
                 receiveShadow
-                // @ts-expect-error ts-migrate(2554) FIXME: Expected 0 arguments, but got 1.
+                // @ts-ignore
                 geometry={nodes.rqgRAGHOwnuBypi.geometry}
                 material={materials.HGhEhpqSBZRnjHC}
                 scale={0.01}
@@ -290,5 +288,7 @@ export default function IPhone(props) {
         </group>
     )
 }
+
+export default Model
 
 useGLTF.preload('/models/scene.glb')

@@ -7,7 +7,7 @@ import { useEffect, useRef, useState } from 'react'
 import { hightlightsSlides } from '../constants'
 import { pauseImg, playImg, replayImg } from '../utils'
 
-export default function VideoCarousel() {
+const VideoCarousel = () => {
     const videoRef = useRef([])
     const videoSpanRef = useRef([])
     const videoDivRef = useRef([])
@@ -50,11 +50,11 @@ export default function VideoCarousel() {
 
     useEffect(() => {
         let currentProgress = 0
-        const span = videoSpanRef.current
+        let span = videoSpanRef.current
 
         if (span[videoId]) {
             // animation to move the indicator
-            const anim = gsap.to(span[videoId], {
+            let anim = gsap.to(span[videoId], {
                 onUpdate: () => {
                     // get the progress of the video
                     const progress = Math.ceil(anim.progress() * 100)
@@ -228,3 +228,5 @@ export default function VideoCarousel() {
         </>
     )
 }
+
+export default VideoCarousel

@@ -16,8 +16,8 @@ export default function App() {
                 <Model />
                 <Features />
                 <Chip />
+                <Footer />
             </main>
-            <Footer />
         </>
     )
 }
